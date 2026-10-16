@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Task_1 (NestJS)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run start:debug",
+      "cwd": "${workspaceFolder}/Task_1",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Debug Test (NestJS)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run start:debug",
+      "cwd": "${workspaceFolder}/Test/test",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
