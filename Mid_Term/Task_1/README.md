@@ -38,14 +38,14 @@ Open http://localhost:3000 in the browser.
 
 ## API Endpoints
 
-| Method | Route        | Description          | Response                                |
-| ------ | ------------ | -------------------- | --------------------------------------- |
-| GET    | /course      | Get all courses      | Get All Courses - from Service          |
-| GET    | /course/:id  | Get course by ID     | Get Course with ID: 5 - from Service    |
-| POST   | /course      | Create new course    | Create Course - from Service            |
-| PUT    | /course/:id  | Update full course   | Update Course 5 - from Service          |
-| PATCH  | /course/:id  | Update partial course| Patch Course 5 - from Service           |
-| DELETE | /course/:id  | Delete course        | Delete Course 5 - from Service          |
+| Method | Route       | Description           | Response                             |
+| ------ | ----------- | --------------------- | ------------------------------------ |
+| GET    | /course     | Get all courses       | Get All Courses - from Service       |
+| GET    | /course/:id | Get course by ID      | Get Course with ID: 5 - from Service |
+| POST   | /course     | Create new course     | Create Course - from Service         |
+| PUT    | /course/:id | Update full course    | Update Course 5 - from Service       |
+| PATCH  | /course/:id | Update partial course | Patch Course 5 - from Service        |
+| DELETE | /course/:id | Delete course         | Delete Course 5 - from Service       |
 
 ## Testing
 

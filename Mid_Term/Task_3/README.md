@@ -41,11 +41,11 @@ npm run start:dev
 
 ## Dependency Injection Summary
 
-| Part   | DI Type      | Dependency                                | Key Mechanism            |
-| ------ | ------------ | ----------------------------------------- | ------------------------ |
-| Part A | Intra-Module | CourseController → CourseService          | providers[]              |
-| Part B | Inter-Module | EnrollmentService → CourseService         | exports[] + imports[]    |
-| Part C | Circular     | EnrollmentService ↔ NotificationService   | forwardRef() on both sides |
+| Part   | DI Type      | Dependency                              | Key Mechanism              |
+| ------ | ------------ | --------------------------------------- | -------------------------- |
+| Part A | Intra-Module | CourseController → CourseService        | providers[]                |
+| Part B | Inter-Module | EnrollmentService → CourseService       | exports[] + imports[]      |
+| Part C | Circular     | EnrollmentService ↔ NotificationService | forwardRef() on both sides |
 
 ## Circular Dependency and ES Modules
 
@@ -65,15 +65,15 @@ Both modules also use `forwardRef()` in their `imports` array.
 
 ## API Endpoints
 
-| Method | Route               | Body                                          |
-| ------ | ------------------- | --------------------------------------------- |
-| GET    | /course             |                                               |
-| GET    | /course/:id         |                                               |
-| POST   | /course             | `{ "name": "NestJS", "code": "CS301" }`       |
-| GET    | /enrollment         |                                               |
-| POST   | /enrollment         | `{ "studentName": "John Doe", "courseId": "101" }` |
+| Method | Route               | Body                                                   |
+| ------ | ------------------- | ------------------------------------------------------ |
+| GET    | /course             |                                                        |
+| GET    | /course/:id         |                                                        |
+| POST   | /course             | `{ "name": "NestJS", "code": "CS301" }`                |
+| GET    | /enrollment         |                                                        |
+| POST   | /enrollment         | `{ "studentName": "John Doe", "courseId": "101" }`     |
 | POST   | /notification/send  | `{ "studentName": "John Doe", "message": "Welcome!" }` |
-| POST   | /notification/check | `{ "studentName": "John Doe", "courseId": "101" }` |
+| POST   | /notification/check | `{ "studentName": "John Doe", "courseId": "101" }`     |
 
 Example response from `POST /enrollment`:
 

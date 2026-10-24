@@ -40,13 +40,13 @@ npm run start:dev
 
 ## Validation Rules (CreateCourseDto)
 
-| Field       | Type   | Required | Rules                          |
-| ----------- | ------ | -------- | ------------------------------ |
-| name        | string | Yes      | Cannot be empty                |
-| code        | string | Yes      | Course code, e.g. CS101        |
-| instructor  | string | Yes      | Cannot be empty                |
-| credits     | number | Yes      | Between 1 and 6                |
-| description | string | No       | Optional course description    |
+| Field       | Type   | Required | Rules                       |
+| ----------- | ------ | -------- | --------------------------- |
+| name        | string | Yes      | Cannot be empty             |
+| code        | string | Yes      | Course code, e.g. CS101     |
+| instructor  | string | Yes      | Cannot be empty             |
+| credits     | number | Yes      | Between 1 and 6             |
+| description | string | No       | Optional course description |
 
 `UpdateCourseDto` extends `PartialType(CreateCourseDto)`, so every field is optional but keeps its rules.
 
